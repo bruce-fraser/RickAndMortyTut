@@ -36,6 +36,7 @@
 		AA95FE9029BDB6A600777FBB /* RMCharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA95FE8F29BDB6A600777FBB /* RMCharacterDetailView.swift */; };
 		AA95FE9229BDB7E700777FBB /* RMCharacterDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA95FE9129BDB7E700777FBB /* RMCharacterDetailViewViewModel.swift */; };
 		AA95FE9429BDC6B800777FBB /* RMFooterLoadingCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA95FE9329BDC6B800777FBB /* RMFooterLoadingCollectionReusableView.swift */; };
+		AA95FE9629C3C58700777FBB /* RMImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA95FE9529C3C58700777FBB /* RMImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		AA95FE8F29BDB6A600777FBB /* RMCharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailView.swift; sourceTree = "<group>"; };
 		AA95FE9129BDB7E700777FBB /* RMCharacterDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailViewViewModel.swift; sourceTree = "<group>"; };
 		AA95FE9329BDC6B800777FBB /* RMFooterLoadingCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMFooterLoadingCollectionReusableView.swift; sourceTree = "<group>"; };
+		AA95FE9529C3C58700777FBB /* RMImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		AA95FE5F29B85DAE00777FBB /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				AA95FE9529C3C58700777FBB /* RMImageLoader.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				AA95FE7729B9944200777FBB /* RMOrigin.swift in Sources */,
 				AA95FE9229BDB7E700777FBB /* RMCharacterDetailViewViewModel.swift in Sources */,
 				AA95FE7929B995A700777FBB /* RMSingleLocation.swift in Sources */,
+				AA95FE9629C3C58700777FBB /* RMImageLoader.swift in Sources */,
 				AA95FE8129BACB9600777FBB /* RMGetAllCharactersResponse.swift in Sources */,
 				AA95FE7B29B9969E00777FBB /* RMCharacterStatus.swift in Sources */,
 				AA95FE7D29B9973600777FBB /* RMCharacterGender.swift in Sources */,

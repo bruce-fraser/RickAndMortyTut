@@ -10,7 +10,7 @@ import Foundation
 /// Primary API service object to get R&M data
 final class RMService {
     static let shared = RMService()
-    
+//    private let cacheManager = RMAPICacheManager()
     private init() {}
     
     enum RMServiceError: Error {

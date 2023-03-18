@@ -33,9 +33,9 @@ final class RMCharacterListView: UIView {
          collectionView.translatesAutoresizingMaskIntoConstraints = false
          collectionView.register(RMCharacterCollectionViewCell.self,
                                  forCellWithReuseIdentifier: RMCharacterCollectionViewCell.cellIdentifier)
-//         collectionView.register(RMFooterLoadingCollectionReusableView.self,
-//                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
-//                                 withReuseIdentifier: RMFooterLoadingCollectionReusableView.identifier)
+         collectionView.register(RMFooterLoadingCollectionReusableView.self,
+                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
+                                 withReuseIdentifier: RMFooterLoadingCollectionReusableView.identifier)
 //        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         return collectionView
      }()
@@ -89,5 +89,11 @@ extension RMCharacterListView: RMCharacterListViewViewModelDelegate {
     
     func didSelectCharacter(_ character: RMCharacter) {
         delegate?.rmCharacterListView(self, didSelectCharacter: character)
+    }
+    
+    func didLoadMoreCharacters(with newIndexPaths: [IndexPath]) {
+        collectionView.performBatchUpdates {
+            self.collectionView.insertItems(at: newIndexPaths)
+        }
     }
 }
